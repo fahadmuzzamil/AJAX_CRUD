@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    /* padding: 10px; */
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+.container{
+    border: 5px solid rgb(23, 23, 23);
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    background-color: rgb(218, 218, 218);
+    min-height: 650px;
+    min-width: 60%;
+}
+header{
+    min-height: 60px;
+    padding: 10px;
+    background-color: rgb(238, 95, 43);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 6px 6px 0 0;
+}
+label{
+    /* color: black; */
+    text-shadow: 0px 0px 10px black;
+    font-weight: 700;
+    font-family: cursive;
+    font-size: 22px;
+}
+input{
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 0 5px;
+    font-weight: bold;
+    background-color: rgb(193, 209, 241);
+    /* caret-color: transparent; */
+    cursor: pointer;
+}
+.name-field-div{
+    min-height: 60px;
+    padding: 10px;
+    background-color: rgb(10, 162, 5);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.name-field{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.fname-div, .lname-div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+#save-btn{
+    background-color: yellow;
+    width: 70px;
+    height: 27px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-weight: 700;
+    font-family: cursive;
+    box-shadow: 0 0 5px black;
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 1px;
+    gap: 5px;
+    transition: all 0.2s;
+}
+#save-btn:hover{
+    transition: all 0.2s;
+    background-color: rgb(121, 73, 10);
+    color: white;
+}
+
+main{
+    padding: 10px;
+}
+
+.table-div{
+    min-height: 470px;
+    border: 4px solid black;
+}
+.table-div table{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* <!-- //Update Portion CSS--> */
+.update-div{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.5);
+
+}
+.inner-update-div{
+    /* visibility: hidden; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    width: 250px;
+    height: 250px;
+    background-color: black;
+    padding: 20px;
+}
+.close{
+    /* visibility: hidden; */
+    position: absolute;
+    color: white;
+    width: 30px;
+    height: 30px;
+    background-color: red; 
+    top: -10px; 
+    right: -10px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.lines{
+    width: 70%;
+    height: 3px;
+    background-color: white;
+}
+.line-1{
+    transform: rotate(45deg);
+}
+.line-2{
+    transform: translateY(-3px) rotate(-45deg) ;
+}
